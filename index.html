@@ -63,13 +63,14 @@
   .dotnav{
     position:fixed; right:28px; top:50%; transform:translateY(-50%);
     display:flex; flex-direction:column; gap:16px; z-index:20;
+    mix-blend-mode:difference;
   }
   .dotnav a{
     width:9px; height:9px; border-radius:50%;
-    background:transparent; border:1.4px solid var(--navy);
-    opacity:0.4; display:block; transition:all .25s ease;
+    background:#fff; border:none;
+    opacity:0.55; display:block; transition:all .25s ease;
   }
-  .dotnav a.active{ background:var(--brass); border-color:var(--brass); opacity:1; transform:scale(1.25); }
+  .dotnav a.active{ opacity:1; transform:scale(1.3); }
   .dotnav a:hover{ opacity:0.85; }
 
   /* HERO */
